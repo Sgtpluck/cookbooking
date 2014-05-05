@@ -1,0 +1,16 @@
+{
+  "chef": {
+    "chef_server_url": "https://api.opscode.com/organizations/ada",
+    "validation_client_name": "ada-validator",
+    "validation_key_path": ".chef/ada-validator.pem",
+    "client_key": ".chef/davidamarion.pem",
+    "node_name": "davidamarion"
+  },
+  "vagrant": {
+    "vm": {
+      "box": "opscode-ubuntu-12.04-i386",
+      "box_url": "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04-i386_provisionerless.box",
+      "provision": "chef_client"
+    }
+  }
+}
