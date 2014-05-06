@@ -7,10 +7,18 @@
 # 
 #
 
+package "apache2" do
+  action :install
+end
+
+service "apache2" do
+  action [ :enable, :start ]
+end
+
 
 deploy_revision "my/deploy/dir" do
 
-  repo 'Sgtpluck/taco.git'
+  repo 'ssh://Sgtpluck/taco.git'
   environment "RAILS_ENV" => "production"
   revision "HEAD"
   action :deploy

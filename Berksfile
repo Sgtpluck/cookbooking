@@ -1,3 +1,6 @@
+cookbook 'rails_app', path: './cookbooks/rails_app'
+
+
 # This is a Berkshelf configuration file. It can be used to declare community
 # and third-party cookbook dependencies. You can install Berkshelf via the
 # command line by typing:
