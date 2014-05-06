@@ -7,27 +7,17 @@
 # 
 #
 application "rails-app" do 
-	packages %w[runit git sqlite3 libsqlite3-dev]
+	packages %w[ruby git]
 
 	path "usr/local/www/rails-app"
-	owner "www-data"
-	group "www-data"
+	owner "root"
+	group "root"
 
-	environment_name = "development"
-
-	repository "https://github.com/mmarschall/rails-app.git"
+	repository "https://github.com/Sgtpluck/taco"
+	rollback_on_error false
 
 	rails do
 		gems %w[bundler]
-
-		database_template "sqlite3_database.yml.erb"
-
-		database do
-			adapter "sqlite3"
-			database "db/rails-app.sqlite3"
-		end
 	end
 
-	unicorn do
-	end
 end
