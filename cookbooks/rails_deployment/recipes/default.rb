@@ -6,13 +6,13 @@
 #
 # 
 #
-package "apache2" do
-  action :install
-end
+	package "apache2" do
+	  action :install
+	end
 
-service "apache2" do
-  action [ :enable, :start ]
-end
+	service "apache2" do
+	  action [ :enable, :start ]
+	end
 
 application "rails-app" do 
 	packages %w[ruby1.9.3 runit git sqlite3 libsqlite3-dev]
@@ -39,5 +39,4 @@ application "rails-app" do
 
 	unicorn do
 	end
-
 end
