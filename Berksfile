@@ -1,4 +1,4 @@
-cookbook 'rails_deployment', path: './cookbooks/rails_app'
+cookbook 'rails_deployment', path: './cookbooks/rails_deployment'
 
 
 # This is a Berkshelf configuration file. It can be used to declare community
