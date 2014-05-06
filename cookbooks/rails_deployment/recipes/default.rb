@@ -15,6 +15,8 @@ application "rails-app" do
 
 	environment_name = "development"
 
+	repository "https://github.com/mmarschall/rails-app.git"
+
 	rails do
 		gems %w[bundler]
 
