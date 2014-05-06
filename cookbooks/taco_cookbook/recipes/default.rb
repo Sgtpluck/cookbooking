@@ -8,7 +8,7 @@
 #
 
 application "rails-app" do 
-	packages %w[ruby git]
+	packages %w[ruby1.9.3 git]
 
 	path "/usr/local/www/rails-app"
 
@@ -20,9 +20,6 @@ application "rails-app" do
 
 	rails do
 		gems %w[bundler]
-		precompile_assets true
 	end
 
-	passenger_apache2 do
-  	end
 end

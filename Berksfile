@@ -1,5 +1,6 @@
 cookbook 'rails_deployment', path: './cookbooks/rails_deployment'
 cookbook 'taco_cookbook', 	 path: './cookbooks/taco_cookbook'
+cookbook 'rvm', github: 'fnichol/chef-rvm'
 
 
 # This is a Berkshelf configuration file. It can be used to declare community

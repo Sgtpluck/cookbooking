@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+    DocumentRoot /usr/local/www/rails-app/current
+    <Directory /usr/local/www/rails-app/current>
+        Allow from all
+        Options -MultiViews
+    </Directory>
+</VirtualHost>
