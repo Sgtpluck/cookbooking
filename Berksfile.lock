@@ -1,6 +1,6 @@
 DEPENDENCIES
-  rails_app
-    path: cookbooks/rails_app
+  rails_deployment
+    path: cookbooks/rails_deployment
 
 GRAPH
   apache2 (1.10.4)
@@ -22,7 +22,7 @@ GRAPH
   passenger_apache2 (2.2.0)
     apache2 (>= 1.0.4)
     build-essential (>= 0.0.0)
-  rails_app (0.1.0)
+  rails_deployment (0.1.0)
     application_ruby (>= 0.0.0)
   runit (1.5.10)
     build-essential (>= 0.0.0)
